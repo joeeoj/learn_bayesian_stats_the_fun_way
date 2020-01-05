@@ -1,0 +1,42 @@
+---
+title: "ch1_exercises"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**1. Rewrite the following statement as equations using the mathematical notation you learned earlier in this chapter**
+
+The probability of rain is low
+
+$P(\text{rain}) = \text{low}$
+
+The probability of rain given that it is cloudy is high
+
+$P(\text{rain} \mid \text{cloudy}) = \text{high}$
+
+The probability of you having an umbrella given it is raining is much greater than the probability of you having an umbrella in general
+
+$P(\text{umbrella} \mid \text{raining}) \gg P(\text{umbrella})$
+
+**2. Organize the data you observe in the following scenario into a mathematical notiation, using the techniques we've covered in this chapter. Then come up with a hypothesis to explain this data.**
+
+_You come home from work and notice that your front door is open and the side window is broken. As you walk inside, you immediately notice your laptop is mising._
+
+$H_1 = \text{robbery}$
+
+$P(\text{door open,window broken,laptop missing} \mid H_1)$
+
+**3. The following scenario adds data to the previous one. Demonstrate how this new information changes your beliefs and come up with a second hypothesis to explain the data, using the notation you've learned in this chapter.**
+
+_A neighborhood child runs up to you and apologizes profusely for accidentally throwing a rock through your window. They claim that they saw the laptop and didn't want it stolen so they opened the front door to grab it, and your laptop is safe at their house._
+
+$H_2 = \text{child accidentally broke window,took laptop to keep safe}$
+
+$P(D \mid H_2, X) \gg P(D \mid H_1, X)$
+
+The above means:
+
+$\frac{P(D \mid H_2, X)}{P(D \mid H_1, X)} = \text{large number}$
